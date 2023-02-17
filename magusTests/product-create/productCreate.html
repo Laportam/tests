@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./create.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <form action="/catalogo/create" method="POST">
+                <div class="form-title">
+                    <h2>¡Subí un nuevo producto!</h2>
+                </div>
+                <div class="inside-form">
+                    <div class="section-container">
+                        <input name="name" type="text" placeholder="Nombre del producto">
+                    </div>
+                    <div class="section-container">
+                        <label for="brand">Marca</label>
+                        <div class="select-wrapper">
+                            <select name="brand" id="brand">
+                                <option disabled selected value="">Elija una marca</option>
+                                <option value="Marca 1">Marca 1</option>
+                                <option value="Marca 2">Marca 2</option>
+                                <option value="Marca 3">Marca 3</option>
+                                <option value="Marca 4">Marca 4</option>
+                                <option value="Marca 5">Marca 5</option>
+                            </select>
+                            <span class="custom-arrow">
+                                <i class="fa-solid fa-sort-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section-container">
+                        <label for="category">Categoría(s)</label>
+                        <div class="select-wrapper">
+                            <select name="category" id="category">
+                                <option disabled selected value="">Elija una categoría</option>
+                                <option value="Categoría 1">Categoría 1</option>
+                                <option value="Categoría 2">Categoría 2</option>
+                                <option value="Categoría 3">Categoría 3</option>
+                                <option value="Categoría 4">Categoría 4</option>
+                                <option value="Categoría 5">Categoría 5</option>
+                            </select>
+                            <span class="custom-arrow">
+                                <i class="fa-solid fa-sort-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section-container">
+                        <label for="SKU">SKU</label>
+                        <input name="SKU" type="text" placeholder="Número de MGS">
+                    </div>
+                    <div class="section-container">
+                        <label for="minimum_required">Mínimo requerido</label>
+                        <input name="minimum_required" type="number" placeholder="Cantidad de producto mínimamente requerida">
+                    </div>
+                    <div class="section-container description">
+                        <label for="description">Descripción</label>
+                        <textarea name="description" id="" placeholder="Escriba una descripción del producto"></textarea>
+                        <input hidden name="description" type="text" >
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit">¡Crear producto!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

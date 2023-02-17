@@ -1,0 +1,136 @@
+:root{
+    --m1:#9a47f4;
+    --m2:#FEB129;
+    --m3:#66a6d9;
+    --m3a:#d4ebfd;
+    --m4:#e365c1;
+    --m5:#3b3c47;
+    --m5a:#4d5061;
+    --m5b:#dddee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:rgb(240, 240, 240)
+}
+
+.main-container{
+    background: #fff;
+    padding:30px;
+    border-radius: 5px;;
+}
+
+.main-container .title-container{
+    color:var(--m1);
+    text-align:center;
+}
+
+.title-container u{
+    color:black
+}
+
+.image-container{
+    display:flex;
+    margin: 30px 0;
+    padding:20px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed var(--m1);
+    cursor:pointer
+}
+
+form i, form p{
+    color:var(--m1);
+}
+
+form i{
+    font-size: 60px;
+}
+
+form p{
+    font-size:20px
+}
+
+form button{
+    border:none;
+    border-radius:5px;
+    color:#fff;
+    font-size:15px;
+    background:var(--m1);
+    padding:10px 5px;
+}
+
+section .row{
+    background:var(--m5b);
+    margin-bottom:19px;
+    list-style: none;
+    padding:15px 20px;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i{
+    margin-right:10px;
+    font-size:30px;
+    color:var(--m1);
+}
+
+section .row i:last-child{
+    margin-right:10px;
+    font-size:30px;
+    color:green
+}
+
+.progress-area .row .content{
+    display:flex;
+    align-items: center;
+}
+
+.progress-area .row .details{
+    display:flex;
+    margin-left:15px;
+    flex-direction: column;
+}
+
+.uploaded-area{
+    max-height:150px;
+    overflow-y:scroll;
+}
+
+.uploaded-area::-webkit-scrollbar{
+    width:12px
+}
+
+.uploaded-area::-webkit-scrollbar-thumb{
+    border-radius:2px;
+    background: #5511e93d;
+}
+
+.uploaded-area .row .content{
+    display:flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details{
+    display:flex;
+    margin-left:15px;
+    flex-direction: column;
+}
+
+.uploaded-area .row .details .size{
+    font-size:12px;
+    color:rgba(0, 0, 0, 0.67);
+}

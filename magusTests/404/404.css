@@ -1,0 +1,48 @@
+:root{
+    --m1:#9a47f4;
+    --m2:#FEB129;
+    --m3:#66a6d9;
+    --m4:#e365c1;
+    --m5:#3b3c47;
+    --m5a:#4d5061;
+    --m5b:#dddee6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:rgb(240, 240, 240);
+}
+
+.notfound-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notfound{
+    height:50%;
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('/wink.png')top;
+    -webkit-background-clip:text;
+            background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.notfound h1{
+    font-size:140px;
+    
+}

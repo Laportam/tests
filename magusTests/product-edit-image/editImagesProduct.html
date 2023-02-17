@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./editImagesProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="up-container">
+            <h1>Cambie el orden de las imágenes</h1>
+        </div>
+        <div class="form-container">
+            <form action="/catalogo/edit/image/<%= id %>" method="POST" enctype="multipart/form-data">
+                <div class="inside-form">
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./1.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./2.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./3.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./1.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./2.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./3.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./1.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./2.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="order" id="order">
+                                    <option disabled selected value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                            <div class="delete-wrapper">
+                                <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./3.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                        </div>
+                        <div class="data-wrapper">
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn submit-btn">
+                    <button type="submit">Cambiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+                        <!--
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 2</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 3</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 4</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 5</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 6</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            <div class="image-wrapper">
+                                <figure>
+                                    <img src="./1.jpg" alt="" width="250px" height="250px">
+                                </figure>
+                            </div> 
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        <div class="image-container">
+                            <div class="info-container">
+                                <div class="info label">
+                                    <label for="images">Imagen 7</label>
+                                </div>
+                                <div class="info select">
+                                    <select name="option" class="option" id="option">
+                                            <option>1</option>
+                                    </select>
+                                </div>
+                                <div class="info delet">
+                                    <a class="delete" href="/catalogo/edit/image/delete/<%= images[i].image_id %>">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <input name="name" type="text" value="<%= images[i].image_id %>" hidden>
+                            
+                            <input name="image" type="image" value="/images/product/1.jpg" hidden>
+                            <input name="id" type="text" value="<%= images[i].id %>" hidden>
+                            <input name="filename" type="text" value="<%= images[i].filename %>" hidden>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="danger-container">
+                        <div class="text-danger">
+                            <h5><i class="fa-regular fa-circle-xmark"></i> Dos o más imágenes tienen asignadas el mismo orden.</h5>
+                        </div>
+                    </div>
+                    <div class="btn btn-wrapper">
+                        <button type="submit" class="btn-submit">
+                            Enviar
+                        </button>
+                    </div>
+                    -->
+    <script src="./editImage.js"></script>
+</body>
+</html>
