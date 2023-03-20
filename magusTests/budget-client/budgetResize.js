@@ -5,7 +5,7 @@ let titlesFr = [...titles];
 let widths = [];
 
 for (let i = 0; i < titlesFr.length; i++) {
-    widths.push(titlesFr[i].offsetWidth)
+    widths.push(titlesFr[i].offsetWidth);
 };
 
 // for (let e = 0; e < contentInputContainer.length; e++) {
@@ -15,7 +15,7 @@ console.log(widths)
 let productInputs = document.querySelectorAll('.product-detail-wrapper');
 let logoInputs = document.querySelectorAll('.logo-input');
 let quantityInputs = document.querySelectorAll('.qty-input');
-let removeInputs = document.querySelectorAll('.remove-input');
+let removeInputs = document.querySelectorAll('.delete-container');
 
 
 for (let a = 0; a < productInputs.length; a++) {
@@ -38,7 +38,7 @@ window.addEventListener('resize', () => {
     let productInputs = document.querySelectorAll('.product-detail-wrapper');
     let logoInputs = document.querySelectorAll('.logo-input');
     let quantityInputs = document.querySelectorAll('.qty-input');
-    let removeInputs = document.querySelectorAll('.remove-input');
+    let removeInputs = document.querySelectorAll('.delete-container');
 
     for (let i = 0; i < titlesFr.length; i++) {
         widths.push(titlesFr[i].offsetWidth)

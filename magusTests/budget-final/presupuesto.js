@@ -1,21 +1,39 @@
 let form = document.querySelector('form');
+let products = document.querySelectorAll('.product-wrapper');
 
-let products = document.querySelectorAll('.product');
-
-products.forEach( product => {
-    // let inputValue = product.querySelector('.input-value');
+form.addEventListener('change', () => {
+    let inputValues = form.querySelectorAll('.price input');
+    let subTotal = 0;
+    let subTotalHTML = document.querySelector('.subtotal p:nth-child(2)');
+    let profit = document.querySelector('.profit input');
     
-    // let subTotal = [];
+    for (let i = 0; i < inputValues.length; i++) {
+        if(isNaN(parseInt(inputValues[i].value))){
+            // Do nothing
+        } else {
+            subTotal += parseInt(inputValues[i].value)
+        }
+    };
 
-    // inputValue.addEventListener('change', (e) => {
-    //     subTotal.push(parseInt(inputValue.value));
-    //     console.log(subTotal)
-    // });
+    subTotalHTML.innerHTML = `
+        ${subTotal.toLocaleString('es-ES')}
+    `;
 
-    
-})
+    if(isNaN(parseInt(profit.value))){
+        console.log('Is NaN')
+    } else {
+        let profitPercentage = parseInt(profit.value) / 100;
+        let profitReal = (profitPercentage * subTotal) + subTotal;
+        let total = document.querySelector('.total p:nth-child(2)');
+
+        total.innerHTML = `
+            ${profitReal.toLocaleString('es-ES')}
+        `;
+    }
+});
 
 
+/*
 
 
 form.addEventListener('change', () => {
@@ -145,3 +163,4 @@ form.addEventListener('change', () => {
 //     document.getElementsByName('product_total')[0].value = totalFinal;
 // })
 
+*/

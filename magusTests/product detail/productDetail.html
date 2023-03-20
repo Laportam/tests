@@ -5,699 +5,780 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./productDetail.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="product-container">
-            <div class="half first">
-                <div class="images-container">
-                    <div class="image-wrapper">
-                        <div class="image">
-                            <figure>
-                                <img src="./1666286599043-.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./1666286599051-.jpg" alt="">
-                            </figure>
-                            <figure>
-                                <img src="./1666286894662-.jpg" alt="">
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="subimages-container">
-                        <div class="subimage-wrapper">
-                            <div class="subimage">
-                                <figure data-id="1">
-                                    <img src="./1666286599043-.jpg" alt="">
-                                </figure>
+    <header>
+        <div class="header-container">
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-center">
+                        <form action="/search" method="POST" autocomplete="off">
+                            <div class="search">
+                                <div class="icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                <div class="input">
+                                    <input name="searched" type="text" placeholder="Buscá..." id="mySearch">
+                                </div>
+                                <span class="clear">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                             </div>
-                        </div>
-                        <div class="subimage-wrapper">
-                            <div class="subimage">
-                                <figure data-id="2">
-                                    <img src="./1666286599051-.jpg" alt="">
-                                </figure>
+                        </form>
+                    </div>
+                    <div class="nav-left">
+                        <figure class="img-desktop">
+                            <a href="/">
+                                <img src="./logo-magus.png" alt="">
+                            </a>
+                        </figure>
+                        <figure class="img-mobile">
+                            <a href="/">
+                                <img src="./Magus-logo.png" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="nav-right">
+                        <div class="menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="moveleft-box">
+                                <ul>
+                                    <li class="catalog">Catálogo <i class="fa-solid fa-chevron-down"></i></li>
+                                    <li class="drop">
+                                        <div class="moveleft-container">
+                                            <ul class="moveleft">
+                                                <li><a href="/catalogo/1">Categorías</a></li>
+                                                <li><a href="/catalogo/brands">Marcas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="/presupuestador">Presupuestador</a>
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
+                            
                         </div>
-                        <div class="subimage-wrapper">
-                            <div class="subimage">
-                                <figure data-id="3">
-                                    <img src="./1666286894662-.jpg" alt="">
-                                </figure>
-                            </div>
+                        <div class="menu-desktop">
+                            <ul>
+                                <li>
+                                    <div class="dropdown-container">
+                                        <span>Catálogo</span>
+                                        <ul class="dropdown">
+                                            <li><a href="/catalogo/1">Categorías</a></li>
+                                            <li><a href="/catalogo/brands">Marcas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/presupuestador">Presupuestador</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="half second">
-                <div class="title-wrapper">
-                    <div class="title">
-                        <h2>Nombre del producto</h2>
-                    </div>
-                    <div class="brand">
-                        <p>NOMBRE DE LA MARCA</p>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <div class="detail-wrapper">
-                        <div class="detail description">
-                            <p><b>Descripción</b></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a consequuntur quis eos similique dolores ab eum repellat, dignissimos possimus?</p>
-                        </div>
-                    </div>
-                    <div class="detail-wrapper">
-                        <div class="detail colors">
-                            <p><b>Colores</b></p>
-                            <div class="colors-two">
-                                <figure width="25px" height="25px" style="background-color:#3979b9; margin-right:5px"></figure>
-                                <figure width="25px" height="25px" style="background-color:#2eb9b0; margin:0px 5px"></figure>
-                                <figure width="25px" height="25px" style="background-color:#32c053; margin:0px 5px"></figure>
-                                <figure width="25px" height="25px" style="background-color:#c0b42d; margin-left:5px"></figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="detail-wrapper">
-                        <div class="detail category">
-                            <i class="fa-solid fa-circle-check"></i> <p><b>Categoría(s):</b> Apparel, Remeras, Algo</p>
-                        </div>
-                    </div>
-                    <div class="detail-wrapper">
-                        <div class="detail sku">
-                            <i class="fa-solid fa-circle-check"></i> <p><b>SKU:</b> MGS1754</p>
-                        </div>
-                    </div>
-                    <div class="detail-wrapper">
-                        <div class="detail stock">
-                            <i class="fa-solid fa-circle-check"></i> <p><b>Disponbilidad:</b> En Stock</p>
-                        </div>
-                    </div>
-                    <div class="detail-wrapper">
-                        <div class="detail quantity">
-                            <i class="fa-solid fa-circle-check"></i> <p><b>Cantidad mínima:</b> 100 unidades</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-wrapper">
-                    <div class="btn">
-                        <button>PRESUPUESTAR</button>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="related-products-container">
-            <div class="related-products-title-wrapper">
-                <div class="related-products-title">
-                    <h2>Productos relacionados</h2>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="product-container">
+                <div class="half first">
+                    <div class="images-container">
+                        <div class="image-wrapper">
+                            <div class="image">
+                                <figure>
+                                    <img src="./1666286599043-.jpg" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./1666286599051-.jpg" alt="">
+                                </figure>
+                                <figure>
+                                    <img src="./1666286894662-.jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="subimages-container">
+                            <div class="subimage-wrapper">
+                                <div class="subimage">
+                                    <figure data-id="1">
+                                        <img src="./1666286599043-.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="subimage-wrapper">
+                                <div class="subimage">
+                                    <figure data-id="2">
+                                        <img src="./1666286599051-.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="subimage-wrapper">
+                                <div class="subimage">
+                                    <figure data-id="3">
+                                        <img src="./1666286894662-.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="half second">
+                    <div class="title-wrapper">
+                        <div class="title">
+                            <h2>Nombre del producto</h2>
+                        </div>
+                        <div class="brand">
+                            <p>NOMBRE DE LA MARCA</p>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <div class="detail-wrapper">
+                            <div class="detail sku">
+                                <p><b>SKU:</b></p>
+                                <p>MGS1754</p>
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <div class="detail stock">
+                                <p><b>Disponbilidad:</b></p>
+                                <p>En Stock</p>
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <div class="detail quantity">
+                                <p><b>Cantidad mínima:</b></p>
+                                <p>100 unidades</p>
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <div class="detail description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, iusto earum commodi suscipit, laudantium ipsam distinctio neque accusantium similique optio est sapiente? Magni id dolores architecto expedita sapiente cumque. Veritatis fugit harum dolores eius amet, consequuntur nulla asperiores iusto cumque vel. Sed non necessitatibus harum, ex iusto repudiandae tenetur saepe.</p>
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <div class="detail category">
+                                <p><b>Categoría(s):</b></p>
+                                <p>Apparel, Remeras, Algo</p>
+                            </div>
+                        </div>
+                        <div class="detail-wrapper">
+                            <div class="detail colors">
+                                <p><b>Colores</b></p>
+                                <div class="colors-two">
+                                    <figure width="25px" height="25px" style="background-color:#3979b9; margin-right:5px"></figure>
+                                    <figure width="25px" height="25px" style="background-color:#2eb9b0; margin:0px 5px"></figure>
+                                    <figure width="25px" height="25px" style="background-color:#32c053; margin:0px 5px"></figure>
+                                    <figure width="25px" height="25px" style="background-color:#c0b42d; margin-left:5px"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapper">
+                        <div class="btn">
+                            <button>Presupuestar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="btns">
-                <div class="boto back">
-                    <button><i class="fa-solid fa-caret-left"></i></button>
-                </div>
-                <div class="boto forward">
-                    <button><i class="fa-solid fa-caret-right"></i></button>
-                </div>
-            </div>
-            <div class="related-products">
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product one</p>
-                                        </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 1</p>
-                                        </div>
-                                    </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+    
+            <div class="related-products-container">
+                <div class="related-products-title-wrapper">
+                    <div class="related-products-title">
+                        <h2>Productos relacionados</h2>
                     </div>
                 </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image3.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product two</p>
-                                        </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                <div class="btns">
+                    <div class="boto back">
+                        <button><i class="fa-solid fa-caret-left"></i></button>
+                    </div>
+                    <div class="boto forward">
+                        <button><i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image4.jpg" alt="">
-                                            </figure>
+                <div class="related-products">
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product three</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product one</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 1</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 3</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image3.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product four</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product two</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 2</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 4</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image3.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image4.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product five</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product three</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 3</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 5</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image4.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product six</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product four</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 4</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 6</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image3.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product seven</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product five</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 5</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 7</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image3.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image4.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product eight</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product six</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 6</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 28</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image4.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product nine</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product seven</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 7</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 9</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image3.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product ten</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product eight</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 28</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 10</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image3.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image4.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product eleven</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product nine</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 9</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 11</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image4.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product twelve</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product ten</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 10</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 12</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image3.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product thirteen</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product eleven</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 11</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 13</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image3.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image4.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product fourteen</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product twelve</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 12</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 14</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image4.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product fifteen</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product thirteen</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 13</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 15</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
-                                    </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="related-product-wrapper">
-                    <div class="product-wrapper">
-                        <div class="product">
-                            <a href="/">
-                                <div class="product-middle-wrapper">
-                                    <!-- IMAGEN -->
-                                    <div class="product-image-wrapper">
-                                        <div class="product-image">
-                                            <figure>
-                                                <img src="./image2.jpg" alt="">
-                                            </figure>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image3.jpg" alt="">
+                                                </figure>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-bottom-wrapper">
-                                    <div class="product-titles-wrapper">
-                                        <div class="product-title header-text">
-                                            <p>Product sixteen</p>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product fourteen</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 14</p>
+                                            </div>
                                         </div>
-                                        <div class="product-title secondary-text">
-                                            <p>Brand 16</p>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="product-description">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image4.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="product-budget-btn">
-                                        <button class="cotizar-button budget-btn">
-                                            <p>Presupuestar</p>
-                                        </button>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product fifteen</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 15</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related-product-wrapper">
+                        <div class="product-wrapper">
+                            <div class="product">
+                                <a href="/">
+                                    <div class="product-middle-wrapper">
+                                        <!-- IMAGEN -->
+                                        <div class="product-image-wrapper">
+                                            <div class="product-image">
+                                                <figure>
+                                                    <img src="./image2.jpg" alt="">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-bottom-wrapper">
+                                        <div class="product-titles-wrapper">
+                                            <div class="product-title header-text">
+                                                <p>Product sixteen</p>
+                                            </div>
+                                            <div class="product-title secondary-text">
+                                                <p>Brand 16</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-description">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio voluptate totam dolore fuga temporibus, sed natus voluptatum amet aspernatur.</p>
+                                        </div>
+                                        <div class="product-budget-btn">
+                                            <button class="cotizar-button budget-btn">
+                                                <p>Presupuestar</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -801,6 +882,26 @@
         </div>
     </main>
     -->
+    <footer>
+        <div class="footer-container">
+            <div class="redes">
+                <figure>
+                    <a href="https://www.facebook.com/Magus-Promociones-346269575740830/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/maguspromo/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/magus-promociones/?originalSubdomain=ar">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="copy">
+                <p><em>© 2022 Magus Promociones S.A. Todos los derechos reservados.</em></p>
+            </div>
+        </div>
+    </footer>
     <script src="./photo.js"></script>
 </body>
 </html>

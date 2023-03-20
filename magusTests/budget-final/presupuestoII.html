@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./presupuestoII.css">
     <title>Document</title>
 </head>
@@ -12,98 +11,150 @@
     <main>
         <div class="main-container">
             <div class="form-container">
-                <form method="POST" action="/presupuestador/presupuesto/<%= datosDb.id %>">
-                    <div class="client-info">
-                        <div class="top-client-info">
-                            <div class="first-half-client-info">
-                                <div class="logo">
-                                    <figure>
-                                        <img src="/images/logo-magus.png" alt="">
-                                    </figure>
+                <form action="">
+                    <div class="client-data-container">
+                        <div class="client-data">
+                            <div class="data">
+                                <h5>Fecha</h5>
+                                <input type="text">
+                            </div>
+                            <div class="data">
+                                <h5>Responsable</h5>
+                                <input type="text">
+                            </div>
+                            <div class="data">
+                                <h5>Cliente</h5>
+                                <input type="text">
+                            </div>
+                            <div class="data">
+                                <h5>Contacto</h5>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invoice-container">
+                        <div class="titles-container">
+                            <div class="title-wrapper">
+                                <h5>Código(s)</h5>
+                            </div>
+                            <div class="title-wrapper">
+                                <h5>Producto(s)</h5>
+                            </div>
+                            <div class="title-wrapper">
+                                <h5>Logo</h5>
+                            </div>
+                            <div class="title-wrapper">
+                                <h5>Cantidades</h5>
+                            </div>
+                            <div class="title-wrapper">
+                                <h5>Precio</h5>
+                            </div> 
+                        </div>
+                        <div class="products-container">
+                            <div class="product-wrapper">
+                                <div class="detail-wrapper code">
+                                    <p>1234</p>
                                 </div>
-                                <div class="invoice-number">
-                                    <h1>PRESUPUESTO #1234</h1>
+                                <div class="detail-wrapper">
+                                    <div class="product">
+                                        <p>Product Random One</p>
+                                    </div>
+                                </div>
+                                <div class="detail-wrapper logo">
+                                    <p>Full Color</p>
+                                </div>
+                                <div class="detail-wrapper quantity">
+                                    <p>120</p>
+                                </div>
+                                <div class="detail-wrapper">
+                                    <div class="price">
+                                        <p>$</p>
+                                        <input type="number" min="1" step="any">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="second-half-client-info">
-                                <h4>www.magus.com.ar</h4>
-                                <h4>info@magus.com.ar</h4>
-                                <h4>011-4305-1294</h4>
+                            <div class="product-wrapper">
+                                <div class="detail-wrapper code">
+                                    <p>1235</p>
+                                </div>
+                                <div class="detail-wrapper">
+                                    <div class="product">
+                                        <p>Product Random Two</p>
+                                    </div>
+                                </div>
+                                <div class="detail-wrapper logo">
+                                    <p>Full Color</p>
+                                </div>
+                                <div class="detail-wrapper quantity">
+                                    <p>1220</p>
+                                </div>
+                                <div class="detail-wrapper">
+                                    <div class="price">
+                                        <p>$</p>
+                                        <input type="number" min="1" step="any">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-wrapper">
+                                <div class="detail-wrapper code">
+                                    <p>36</p>
+                                </div>
+                                <div class="detail-wrapper">
+                                    <div class="product">
+                                        <p>Product Random Three</p>
+                                    </div>
+                                </div>
+                                <div class="detail-wrapper logo">
+                                    <p>Full Color</p>
+                                </div>
+                                <div class="detail-wrapper quantity">
+                                    <p>520</p>
+                                </div>
+                                <div class="detail-wrapper">
+                                    <div class="price">
+                                        <p>$</p>
+                                        <input type="number" min="1" step="any">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="bottom-client-info">
-                            <input name="presupuesto" type="hidden" value="1234">
-                            <div class="info">
-                                <p><b><u>Cliente:</u></b> <i>Manuel La Porta</i></p>
-                                <input name="cliente" type="hidden" value="<%= datosDb.client %>">
+                        <div class="profit-container">
+                            <div class="profit-wrapper">
+                                <div class="profit-title">
+                                    <p>Subtotal</p>
+                                </div>
+                                <div class="profit-title">
+                                    <p>Ganancia</p>
+                                </div>
+                                <div class="profit-title">
+                                    <p>Total</p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p><b><u>Empresa:</u></b> <i>Magus Promociones</i></p>
-                                <input name="empresa" type="hidden" value="<%= datosDb.company%>">
+                            <div class="profit-wrapper">
+                                <div class="number subtotal">
+                                    <p>$</p>
+                                    <p></p>
+                                </div>
+                                <div class="number profit">
+                                    <p>%</p>
+                                    <input type="number" min="1" step="any">
+                                </div>
+                                <div class="number total">
+                                    <p>$</p>
+                                    <p></p>
+                                </div>
                             </div>
-                            <div class="info">
-                                <p><b><u>Email:</u></b> <i>laportamanuel96@gmail.com</i></p>
-                            </div>
-                            <div class="info">
-                                <p><b><u>Fecha de consulta:</u> 12/01/2023</b></p>
-                                <input name="consulta" type="hidden" value="<%= datosDb.received_at %>">
-                            </div>
-                            <div class="info">
-                                <p><b><u>Fecha de respuesta:</u> 07/02/2023</b></p>
-                                <input name="fecha" type="hidden" value="<%= date %>">
+                        </div>
+                        <div class="btn-container">
+                            <div class="btn-wrapper">
+                                <button type="submit">A Imprimir</button>
                             </div>
                         </div>
                     </div>
-                    <div class="products">
-                        <div class="titles">
-                            <h2>Código</h2>
-                            <h2>Producto</h2>
-                            <h2>Logo</h2>
-                            <h2>Cantidad</h2>
-                            <h2>Precio</h2>
-                        </div>
-                        <div name="product" class="product">
-                            <p>Un código</p>
-                            <p>Producto random 1 </p>
-                            <p>Un logo</p>
-                            <p>140</p>
-                            <input class="input-value" id="value" name="value" type="number">
-                            <input name="product_id" type="hidden" value="<%= product[a].id %>">
-                            <input name="product_name" type="hidden" value="<%= product[a].name %>">
-                            <input name="product_quantity" type="hidden" value="<%= productsDb[i].quantity %>">
-                        </div>
-                        <div name="product" class="product">
-                            <p>Un código</p>
-                            <p>Producto random 1 </p>
-                            <p>Un logo</p>
-                            <p>140</p>
-                            <input class="input-value" id="value" name="value" type="number">
-                            <input name="product_id" type="hidden" value="<%= product[a].id %>">
-                            <input name="product_name" type="hidden" value="<%= product[a].name %>">
-                            <input name="product_quantity" type="hidden" value="<%= productsDb[i].quantity %>">
-                        </div>
-                    </div>
-                    <div class="totales">
-                        <div id="subtotal" class="subtotal">
-                            <div class="sub">
-                                <p>Subtotal:</p>
-                                <p> -</p>
-                            </div>
-                            <div class="gan">
-                                <p>Ganancia %</p>
-                                <input name="gan" type="number">
-                            </div>
-                            <div class="tot">
-                                <p>Total:</p>
-                                <p> -</p>
-                                <input name="product_total" type="hidden" value="">
-                            </div>
-                        </div>
-                    </div>
-                    <button type="Submit">Enviar</button>
                 </form>
             </div>
         </div>
+        
     </main>
 
     <script src="./presupuesto.js"></script>

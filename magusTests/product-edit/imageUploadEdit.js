@@ -7,6 +7,7 @@ imageContainer.addEventListener('click', () => {
 });
 
 fileInput.addEventListener('change', (e) => {
+    uploadedArea.classList.add('example');
     let file = e.target.files;
     if(file){
         for (let i = 0; i < file.length; i++) {

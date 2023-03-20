@@ -8,20 +8,70 @@
     --m5b:#dddee6;
 }
 
-* {
-    margin: 0;
+:root{
+    --m1:#9a47f4;
+    --m1a:#610cbb;
+    --m1b:#d3bfe7;
+    --m2:#FEB129;
+    --m2a:#ffbe4d;
+    --m2b:#ffdb9e;
+    --m3:#66a6d9;
+    --m4:#e365c1;
+    --m4a:#ffdbf5;
+    --m5:#3b3c47;
+    --m5a:#4d5061;
+    --m5b:#dddee6;
+}
+
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    color:var(--m5);
+    font-size:30px;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    outline: 1px solid rgba(112, 128, 144, 0.466);
+}
+
 main{
-    display:flex;
+    margin-top:90px;
+    padding:40px 0;
+    min-height:100vh;
+    min-width:360px;
+    width:100%;
+    max-width:100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
-    background:rgb(240, 240, 240)
+    background:rgb(248, 248, 248)
 }
+
+
 
 .form-container{
     width:100%;
@@ -34,6 +84,19 @@ main{
 form{
     width:90%;
     max-width:450px;
+}
+
+.form-title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--m5);
+    margin-bottom:30px;
+}
+
+.form-title a{
+    text-decoration: underline;
 }
 
 .inside-form{
@@ -74,11 +137,11 @@ form{
 }
 
 .section-container:nth-child(1){
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .select-wrapper{
-    width:16%;
+    width:120px;
     position:relative;
     display:flex;
     justify-content: center;
@@ -128,7 +191,7 @@ option:nth-child(1){
 .custom-arrow{
     position:absolute;
     top:0;
-    right:0px;
+    right:36px;
     display:block;
     background:var(--m5);
     height:100%;
@@ -156,6 +219,26 @@ option:nth-child(1){
     border:1px solid rgba(0,0,0,0.1);
     border-radius:7px;
     box-shadow: 0px 3px 7px rgba(0,0,0,0.2)
+}
+
+.btn-wrapper{
+    width:80%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-wrapper button {
+    width:100%;
+    color:white;
+    font-family: 'Dosis', sans-serif;
+    font-size:17px;
+    padding: 10px 30px 10px 30px;
+    border:1px solid rgba(250, 250, 250, 0.1);
+    outline:none;
+    background:var(--m1);
+    border-radius: 4px;
+    cursor:pointer;
 }
 
 @media (min-width: 768px){

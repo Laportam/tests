@@ -5,32 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./productUploadImage.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
 <body>
-
+    <header>
+        <div class="header-container">
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-center">
+                        <form action="/search" method="POST" autocomplete="off">
+                            <div class="search">
+                                <div class="icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                <div class="input">
+                                    <input name="searched" type="text" placeholder="Buscá..." id="mySearch">
+                                </div>
+                                <span class="clear">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="nav-left">
+                        <figure class="img-desktop">
+                            <a href="/">
+                                <img src="./logo-magus.png" alt="">
+                            </a>
+                        </figure>
+                        <figure class="img-mobile">
+                            <a href="/">
+                                <img src="./Magus-logo.png" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="nav-right">
+                        <div class="menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="moveleft-box">
+                                <ul>
+                                    <li class="catalog">Catálogo <i class="fa-solid fa-chevron-down"></i></li>
+                                    <li class="drop">
+                                        <div class="moveleft-container">
+                                            <ul class="moveleft">
+                                                <li><a href="/catalogo/1">Categorías</a></li>
+                                                <li><a href="/catalogo/brands">Marcas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="/presupuestador">Presupuestador</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="menu-desktop">
+                            <ul>
+                                <li>
+                                    <div class="dropdown-container">
+                                        <span>Catálogo</span>
+                                        <ul class="dropdown">
+                                            <li><a href="/catalogo/1">Categorías</a></li>
+                                            <li><a href="/catalogo/brands">Marcas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/presupuestador">Presupuestador</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
         <div class="main-container">
-            <div class="title-container">
-                <h1>Ya creaste tu producto <u>Producto de Prueba</u></h1>
-                <h3>Ahora solo falta subir sus respectivas imágenes:</h3>
-            </div>
             <div class="form-container">
                 <form action="/catalogo/create/<%= product.id %>" method="POST" enctype="multipart/form-data">
-                    <div class="image-container">
-                        <input name="image" type="file" class="file-input" multiple hidden>
-                        <i class="fa-solid fa-camera"></i>
-                        <p>Cargá tus imágenes</p>
+                    <div class="form-title">
+                        <h2>Subí las imágenes para Nombre del Producto</h2>
                     </div>
-                    <section class="uploaded-area">
-                        
-                    </section>
-                    <div class="btn-container">
-                        <button type="submit">Subir imágenes</button>
+                    <div class="inside-form">
+                        <div class="section-container">
+                            <div class="image-container">
+                                <input name="image" type="file" class="file-input" multiple hidden>
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <p>Cargá tus imágenes</p>
+                            </div>
+                            <section class="uploaded-area">
+                                
+                            </section>
+                        </div>
+                        <div class="section-container btn">
+                            <div class="btn-wrapper">
+                                <button type="submit">Subir imágenes</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </main>
-
+    <footer>
+        <div class="footer-container">
+            <div class="redes">
+                <figure>
+                    <a href="https://www.facebook.com/Magus-Promociones-346269575740830/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/maguspromo/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/magus-promociones/?originalSubdomain=ar">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="copy">
+                <p><em>© 2022 Magus Promociones S.A. Todos los derechos reservados.</em></p>
+            </div>
+        </div>
+    </footer>
     <script src="./imageUpload.js"></script>
 </html>

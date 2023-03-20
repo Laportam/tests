@@ -5,102 +5,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./budgetsAll.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <div class="invoice-container">
-            <div class="orders-container">
-                <div class="order-titles-container">
-                    <div class="title-wrapper">
-                        <i class="fa-solid fa-trash"></i>
+    <header>
+        <div class="header-container">
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-center">
+                        <form action="/search" method="POST" autocomplete="off">
+                            <div class="search">
+                                <div class="icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                <div class="input">
+                                    <input name="searched" type="text" placeholder="Buscá..." id="mySearch">
+                                </div>
+                                <span class="clear">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                        </form>
                     </div>
-                    <div class="title-wrapper">
-                        <h3>Presupuesto</h3>
+                    <div class="nav-left">
+                        <figure class="img-desktop">
+                            <a href="/">
+                                <img src="./logo-magus.png" alt="">
+                            </a>
+                        </figure>
+                        <figure class="img-mobile">
+                            <a href="/">
+                                <img src="./Magus-logo.png" alt="">
+                            </a>
+                        </figure>
                     </div>
-                    <div class="title-wrapper">
-                        <h3>Cliente</h3>
-                    </div>
-                    <div class="title-wrapper">
-                        <h3>Empresa</h3>
-                    </div>
-                    <div class="title-wrapper">
-                        <h3>Recibido el</h3>
+                    <div class="nav-right">
+                        <div class="menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="moveleft-box">
+                                <ul>
+                                    <li class="catalog">Catálogo <i class="fa-solid fa-chevron-down"></i></li>
+                                    <li class="drop">
+                                        <div class="moveleft-container">
+                                            <ul class="moveleft">
+                                                <li><a href="/catalogo/1">Categorías</a></li>
+                                                <li><a href="/catalogo/brands">Marcas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="/presupuestador">Presupuestador</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="menu-desktop">
+                            <ul>
+                                <li>
+                                    <div class="dropdown-container">
+                                        <span>Catálogo</span>
+                                        <ul class="dropdown">
+                                            <li><a href="/catalogo/1">Categorías</a></li>
+                                            <li><a href="/catalogo/brands">Marcas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/presupuestador">Presupuestador</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="orders">
-                    <div class="order-wrapper">
-                        <div class="remove">
-                            <input type="checkbox">
+            </div>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="main-container">
+            <div class="invoice-container">
+                <div class="orders-container">
+                    <div class="orders">
+                        <div class="order-wrapper">
+                            <div class="one">
+                                <div class="budget-number">
+                                    <p>#1234</p>
+                                </div>
+                                <div class="circle-wrapper">
+                                    <div class="circle">
+                                        <p>M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="two">
+                                <div class="client">
+                                    <p>Manuel La Porta</p>
+                                </div>
+                                <div class="company">
+                                    <p>Magus Promociones</p>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti exercitationem adipisci alias, cum distinctio reprehenderit itaque quia consequuntur tenetur officia consequatur sit vel perspiciatis! Natus sit maxime eius laboriosam fuga neque iure doloremque laborum similique corporis, minus nemo? Quas, nostrum eum. Aperiam, cupiditate quisquam ex temporibus dolorem tempore nam.</p>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <div class="received-at">
+                                    <p>Mar 12</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
                         </div>
-                        <div class="budget-number">
-                            <p>1234</p>
+                        <div class="order-wrapper">
+                            <div class="one">
+                                <div class="budget-number">
+                                    <p>#1235</p>
+                                </div>
+                                <div class="circle-wrapper">
+                                    <div class="circle">
+                                        <p>M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="two">
+                                <div class="client">
+                                    <p>Javier La Porta</p>
+                                </div>
+                                <div class="company">
+                                    <p>BC&G</p>
+                                </div>
+                                <div class="comment">
+                                    <p>(no hay comentarios)</p>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <div class="received-at">
+                                    <p>Mar 14</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
                         </div>
-                        <div class="client">
-                            <p>Manuel La Porta</p>
+                        <div class="order-wrapper">
+                            <div class="one">
+                                <div class="budget-number">
+                                    <p>#1236</p>
+                                </div>
+                                <div class="circle-wrapper">
+                                    <div class="circle">
+                                        <p>M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="two">
+                                <div class="client">
+                                    <p>Cosme Fulanito</p>
+                                </div>
+                                <div class="company">
+                                    <p>Fulanito Producciones</p>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti exercitationem adipisci alias, cum distinctio reprehenderit itaque quia consequuntur tenetur officia consequatur sit vel perspiciatis! Natus sit maxime eius laboriosam fuga neque iure doloremque laborum similique corporis, minus nemo? Quas, nostrum eum. Aperiam, cupiditate quisquam ex temporibus dolorem tempore nam.</p>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <div class="received-at">
+                                    <p>Mar 14</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
                         </div>
-                        <div class="company">
-                            <p>Magus Promociones</p>
-                        </div>
-                        <div class="receveied-at">
-                            <p>12/01/2023</p>
-                        </div>
-                    </div>
-                    <div class="order-wrapper">
-                        <div class="remove">
-                            <input type="checkbox">
-                        </div>
-                        <div class="budget-number">
-                            <p>1235</p>
-                        </div>
-                        <div class="client">
-                            <p>Javier La Porta</p>
-                        </div>
-                        <div class="company">
-                            <p>BC&G</p>
-                        </div>
-                        <div class="receveied-at">
-                            <p>14/01/2023</p>
-                        </div>
-                    </div>
-                    <div class="order-wrapper">
-                        <div class="remove">
-                            <input type="checkbox">
-                        </div>
-                        <div class="budget-number">
-                            <p>1236</p>
-                        </div>
-                        <div class="client">
-                            <p>Cosme Fulanito</p>
-                        </div>
-                        <div class="company">
-                            <p>Fulanito Producciones</p>
-                        </div>
-                        <div class="receveied-at">
-                            <p>14/01/2023</p>
-                        </div>
-                    </div>
-                    <div class="order-wrapper">
-                        <div class="remove">
-                            <input type="checkbox">
-                        </div>
-                        <div class="budget-number">
-                            <p>1237</p>
-                        </div>
-                        <div class="client">
-                            <p>Donald Trump</p>
-                        </div>
-                        <div class="company">
-                            <p>The White House</p>
-                        </div>
-                        <div class="receveied-at">
-                            <p>16/01/2023</p>
+                        <div class="order-wrapper">
+                            <div class="one">
+                                <div class="budget-number">
+                                    <p>#1237</p>
+                                </div>
+                                <div class="circle-wrapper">
+                                    <div class="circle">
+                                        <p>M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="two">
+                                <div class="client">
+                                    <p>Donald Trump</p>
+                                </div>
+                                <div class="company">
+                                    <p>The White House</p>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti exercitationem adipisci alias, cum distinctio reprehenderit itaque quia consequuntur tenetur officia consequatur sit vel perspiciatis! Natus sit maxime eius laboriosam fuga neque iure doloremque laborum similique corporis, minus nemo? Quas, nostrum eum. Aperiam, cupiditate quisquam ex temporibus dolorem tempore nam.</p>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <div class="received-at">
+                                    <p>Mar 16</p>
+                                </div>
+                                <div class="remove">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="redes">
+                <figure>
+                    <a href="https://www.facebook.com/Magus-Promociones-346269575740830/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/maguspromo/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/magus-promociones/?originalSubdomain=ar">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="copy">
+                <p><em>© 2022 Magus Promociones S.A. Todos los derechos reservados.</em></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

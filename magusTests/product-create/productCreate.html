@@ -6,70 +6,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./create.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-center">
+                        <form action="/search" method="POST" autocomplete="off">
+                            <div class="search">
+                                <div class="icon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                                <div class="input">
+                                    <input name="searched" type="text" placeholder="Buscá..." id="mySearch">
+                                </div>
+                                <span class="clear">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="nav-left">
+                        <figure class="img-desktop">
+                            <a href="/">
+                                <img src="./logo-magus.png" alt="">
+                            </a>
+                        </figure>
+                        <figure class="img-mobile">
+                            <a href="/">
+                                <img src="./Magus-logo.png" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="nav-right">
+                        <div class="menu-mobile">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="moveleft-box">
+                                <ul>
+                                    <li class="catalog">Catálogo <i class="fa-solid fa-chevron-down"></i></li>
+                                    <li class="drop">
+                                        <div class="moveleft-container">
+                                            <ul class="moveleft">
+                                                <li><a href="/catalogo/1">Categorías</a></li>
+                                                <li><a href="/catalogo/brands">Marcas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <a href="/presupuestador">Presupuestador</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="menu-desktop">
+                            <ul>
+                                <li>
+                                    <div class="dropdown-container">
+                                        <span>Catálogo</span>
+                                        <ul class="dropdown">
+                                            <li><a href="/catalogo/1">Categorías</a></li>
+                                            <li><a href="/catalogo/brands">Marcas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/presupuestador">Presupuestador</a></li>
+                                <li><a href="/contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-        <div class="form-container">
-            <form action="/catalogo/create" method="POST">
-                <div class="form-title">
-                    <h2>¡Subí un nuevo producto!</h2>
-                </div>
-                <div class="inside-form">
-                    <div class="section-container">
-                        <input name="name" type="text" placeholder="Nombre del producto">
+        <div class="main-container">
+            <div class="form-container">
+                <form action="/catalogo/create" method="POST">
+                    <div class="form-title">
+                        <h2>¡Subí un nuevo producto!</h2>
                     </div>
-                    <div class="section-container">
-                        <label for="brand">Marca</label>
-                        <div class="select-wrapper">
-                            <select name="brand" id="brand">
-                                <option disabled selected value="">Elija una marca</option>
-                                <option value="Marca 1">Marca 1</option>
-                                <option value="Marca 2">Marca 2</option>
-                                <option value="Marca 3">Marca 3</option>
-                                <option value="Marca 4">Marca 4</option>
-                                <option value="Marca 5">Marca 5</option>
-                            </select>
-                            <span class="custom-arrow">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
+                    <div class="inside-form">
+                        <div class="section-container">
+                            <input name="name" type="text" placeholder="Nombre del producto">
+                        </div>
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="brand" id="brand">
+                                    <option disabled selected value="">Elija una marca</option>
+                                    <option value="Marca 1">Marca 1</option>
+                                    <option value="Marca 2">Marca 2</option>
+                                    <option value="Marca 3">Marca 3</option>
+                                    <option value="Marca 4">Marca 4</option>
+                                    <option value="Marca 5">Marca 5</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="select-wrapper">
+                                <select name="category" id="category">
+                                    <option disabled selected value="">Elija una categoría</option>
+                                    <option value="Categoría 1">Categoría 1</option>
+                                    <option value="Categoría 2">Categoría 2</option>
+                                    <option value="Categoría 3">Categoría 3</option>
+                                    <option value="Categoría 4">Categoría 4</option>
+                                    <option value="Categoría 5">Categoría 5</option>
+                                </select>
+                                <span class="custom-arrow">
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <input name="SKU" type="text" placeholder="Número de MGS">
+                        </div>
+                        <div class="section-container">
+                            <input name="minimum_required" type="number" placeholder="Cantidad de producto mínimamente requerida">
+                        </div>
+                        <div class="section-container description">
+                            <textarea name="description" id="" placeholder="Escriba una descripción del producto"></textarea>
+                            <input hidden name="description" type="text" >
+                        </div>
+                        <div class="section-container btn">
+                            <div class="btn-wrapper">
+                                <button type="submit">¡Crear producto!</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="section-container">
-                        <label for="category">Categoría(s)</label>
-                        <div class="select-wrapper">
-                            <select name="category" id="category">
-                                <option disabled selected value="">Elija una categoría</option>
-                                <option value="Categoría 1">Categoría 1</option>
-                                <option value="Categoría 2">Categoría 2</option>
-                                <option value="Categoría 3">Categoría 3</option>
-                                <option value="Categoría 4">Categoría 4</option>
-                                <option value="Categoría 5">Categoría 5</option>
-                            </select>
-                            <span class="custom-arrow">
-                                <i class="fa-solid fa-sort-down"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="section-container">
-                        <label for="SKU">SKU</label>
-                        <input name="SKU" type="text" placeholder="Número de MGS">
-                    </div>
-                    <div class="section-container">
-                        <label for="minimum_required">Mínimo requerido</label>
-                        <input name="minimum_required" type="number" placeholder="Cantidad de producto mínimamente requerida">
-                    </div>
-                    <div class="section-container description">
-                        <label for="description">Descripción</label>
-                        <textarea name="description" id="" placeholder="Escriba una descripción del producto"></textarea>
-                        <input hidden name="description" type="text" >
-                    </div>
-                    <div class="btn-wrapper">
-                        <button type="submit">¡Crear producto!</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="redes">
+                <figure>
+                    <a href="https://www.facebook.com/Magus-Promociones-346269575740830/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/maguspromo/?hl=en">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/magus-promociones/?originalSubdomain=ar">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </figure>
+            </div>
+            <div class="copy">
+                <p><em>© 2022 Magus Promociones S.A. Todos los derechos reservados.</em></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

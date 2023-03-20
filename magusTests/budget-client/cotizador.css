@@ -1,26 +1,66 @@
 :root{
     --m1:#9a47f4;
+    --m1a:#610cbb;
+    --m1b:#d3bfe7;
     --m2:#FEB129;
+    --m2a:#ffbe4d;
+    --m2b:#ffdb9e;
     --m3:#66a6d9;
     --m4:#e365c1;
+    --m4a:#ffdbf5;
+    --m5:#3b3c47;
+    --m5a:#4d5061;
+    --m5b:#dddee6;
 }
 
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style: none;
+}
+
+
+h1, h2, h3, h5, h6{
+    color:var(--m5);
+    text-transform: uppercase;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, input, textarea{
+    font-family: 'Dosis', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    outline: 1px solid rgba(112, 128, 144, 0.466);
+}
+
 main{
-    display:flex;
+    margin-top:90px;
+    padding:20px 0;
+    min-height:100vh;
+    min-width:360px;
+    width:100%;
+    max-width:100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height:100vh;
-    background:rgb(240, 240, 240)
+    background:rgb(248, 248, 248)
 }
 
 .budget-container{
-    width:91%;
+    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -32,18 +72,19 @@ main{
     justify-content: center;
     align-items: center;
     width:100%;
+    padding:20px 0;
+    width:100%;
+    background:white;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .form-container{
-    width:100%;
+    width:90%;
     height:fit-content;
-    padding:15px 0;
     display:flex;
     justify-content: center;
     align-items: center;
-    border:1px solid rgba(0, 0, 0, 0.2);
-    border-radius:5px;
-    background:white;
 }
 
 form{
@@ -55,28 +96,36 @@ form{
 }
 
 .first{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom:20px;
 }
 
 .top{
-    
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.first .top h2{
-    font-size:20px;
-    color:var(--m1);
+.bottom{
+    width:95%;
+    max-width:625px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .client{
-    height:33px;
-    width:100%;
+    height:fit-content;
+    width:fit-content;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin:15px 0;
+    margin:15px 15px;
 }
 
 .client .icon{
@@ -84,14 +133,13 @@ form{
     width:33px;
     border:1px solid rgba(0, 0, 0, 0.15);
     border-right:none;
-    border-radius:30px;
+    border-radius: 4px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background:white;
     display:flex;
     justify-content: center;
     align-items: center;
-    background:#ecdbff;
 }
 
 .client .input{
@@ -100,29 +148,26 @@ form{
 
 .client i{
     font-size:14px;
-    border-right:1px solid #feb02985;
+    border-right:1px solid black;
     padding:0 5px;
-    color:var(--m2)
 }
 
 .client input{
-    height:33px;
-    width:190px;
-    max-width:225px;
     border:1px solid rgba(0, 0, 0, 0.15);
     border-left:none;
-    border-radius:30px;
+    border-radius: 4px;
+    height:33px;
+    width:30vw;
+    max-width:180px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     outline:none;
-    background:#ecdbff;
-    color:var(--m2);
     font-weight:700;
 }
 
 .client input::placeholder{
-    color:var(--m2);
     font-weight:700;
+    color:black;
 }
 
 /*-- Second --*/
@@ -138,19 +183,19 @@ form{
 
 .titulo-principal, .titulos, .contenido, .comments-container{
     width:95%;
-    max-width:320px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
 .titulo-principal{
-    margin-top:30px;
+    margin-top:10px;
     margin-bottom:10px
 }
 
 .titulos .titles-box{
-    width:100%;
+    width:95%;
+    max-width:320px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -158,17 +203,19 @@ form{
 
 .titles-box{
     padding-bottom:5px;
-    border-bottom:1px solid black;
+    border-bottom:1px solid rgba(0,0,0,0.4);
     margin-bottom:5px;
 }
 
 .titles-box h4:nth-child(4){
-    width:20px
+    width:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenido{
-    width:100%;
-    max-width:304px;
+    width:95%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -176,14 +223,18 @@ form{
 }
 
 .product-info-content{
-    width:100%;
-    max-width:304px;
+    width:95%;
+    max-width:320px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:10px 0;
     margin:8px 0;
-    background:rgb(243, 243, 243);
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
+
+.product-info-content:last-child{
+    border-bottom:none;
 }
 
 .product-detail-wrapper{
@@ -195,6 +246,11 @@ form{
 
 .product-detail-wrapper h1{
     font-size:13px;
+    max-width:80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
 }
 
 .product-detail-wrapper h2{
@@ -208,9 +264,12 @@ form{
 .content-input-container input{
     text-align: center;
     outline:none;
-    border:1px solid rgba(0, 0, 0, 0.15);
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 1px 6px 2px rgba(0,0,0,0.2);
+    border:none;
 }
 
+/*
 .content-input-container select{
     outline:none;
     border:1px solid rgba(0, 0, 0, 0.15);
@@ -219,6 +278,30 @@ form{
 .content-input-container option{
     font-size:10px;
     border:1px solid rgba(0, 0, 0, 0.15);
+}
+*/
+
+.content-input-container{
+    position:relative;
+}
+
+select{
+    width:100%;
+    height:25px;
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 0 1px 6px 2px rgba(0,0,0,0.2);
+    border:none;
+    outline:none;
+    appearance: none;
+    font-style: italic;
+    cursor:pointer;
+    text-align: center;
+    background:#ffffff;
+    font-size:14px;
+}
+
+option:nth-child(1){
+    font-style: italic;
 }
 
 .qty-container{
@@ -233,8 +316,7 @@ form{
     left:-11px
 }
 
-.remove-input{
-    font-size:13px;
+.delete-container{
     border:1px solid rgba(0, 0, 0, 0.15);
     border-radius:3px;
     display:flex;
@@ -242,12 +324,19 @@ form{
     align-items: center;
 }
 
+.remove-input{
+    font-size:13px;
+}
+
+.comments-container .comments label{
+    font-size:14px;
+}
 
 .comments-container .comments textarea{
     width:100%;
     height:150px;
     outline:none;
-    border:1px solid rgba(0, 0, 0, 0.3);
+    border:1px solid rgba(0, 0, 0, 0.15);
     border-radius:3px;
     padding:5px 3px;
     font-size:10px
@@ -276,46 +365,12 @@ form{
     }
 
     .bottom{
-        border:1px solid black;
+        width:95%;
+        max-width:625px;
         display:flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width:80vw;
-        max-width: 90%;
-    }
-
-    .client{
-        height:fit-content;
-        width:fit-content;
-        max-width:225px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        margin:15px 5px;
-    }
-
-    .client:nth-child(1), .client:nth-child(3){
-        margin-right:25px;
-    }
-
-    .client:nth-child(2), .client:nth-child(4){
-        margin-left:25px;
-    }
-
-    .client input{
-        height:33px;
-        width:190px;
-        max-width:225px;
-        border:1px solid rgba(0, 0, 0, 0.15);
-        border-left:none;
-        border-radius:30px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        outline:none;
-        background:#ecdbff;
-        color:var(--m2);
-        font-weight:700;
     }
 
     /*-- Second --*/
@@ -342,10 +397,7 @@ form{
     }
 
     .titulos .titles-box{
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
+        max-width:600px;
     }
 
     .titles-box{
@@ -368,14 +420,7 @@ form{
     }
 
     .product-info-content{
-        width:100%;
         max-width:600px;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:10px 0;
-        margin:8px 0;
-        background:rgb(243, 243, 243);
     }
 
     .product-detail-wrapper{
@@ -456,17 +501,13 @@ form{
         align-items: center;
     }
 
-    
-    
-
     .bottom{
-        border:1px solid black;
+        width:95%;
+        max-width:700px;
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        width:90vw;
-        max-width: 70%;
     }
 
     .client{
@@ -485,21 +526,6 @@ form{
 
     .client:nth-child(2), .client:nth-child(4){
         margin-left:90px;
-    }
-
-    .client input{
-        height:33px;
-        width:190px;
-        max-width:225px;
-        border:1px solid rgba(0, 0, 0, 0.15);
-        border-left:none;
-        border-radius:30px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        outline:none;
-        background:#ecdbff;
-        color:var(--m2);
-        font-weight:700;
     }
 
     /*-- Second --*/
@@ -522,14 +548,11 @@ form{
     }
 
     .titulo-principal{
-        margin-bottom:20px
+        margin-bottom:20px;
     }
 
     .titulos .titles-box{
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
+        max-width:900px;
     }
 
     .titles-box{
@@ -539,7 +562,7 @@ form{
     }
 
     .titles-box h4:nth-child(4){
-        width:20px
+        width:20px;
     }
 
     .contenido{
@@ -552,14 +575,7 @@ form{
     }
 
     .product-info-content{
-        width:100%;
         max-width:900px;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:10px 0;
-        margin:8px 0;
-        background:rgb(243, 243, 243);
     }
 
     .product-detail-wrapper{
